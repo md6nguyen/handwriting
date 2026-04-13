@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>Writing Recognizer</title>
+  <link rel="stylesheet" href="script/master.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML'></script>
+</head>
+<body style='margin: 0'>
+  <div id="toolbar">
+    <div id="rad">
+      Size <span id="radval">10</span>
+      <div id="decrad" class="radcontrol">-</div>
+      <div id="incrad" class="radcontrol">+</div>
+    </div>
+    <select id="mode">
+      <option value="math" selected>Math</option>
+      <option value="chinese">Chinese</option>
+    </select>
+    <div id="colors">
+    </div>
+    <div id="eval">
+      Eval
+    </div>
+  </div>
+  <canvas id="canvas" style="display: block;">
+    Sorry, your browser is rubbish.
+  </canvas>
+  <hr>
+  <div id="result_math"></div>
+  <div id="result_chinese"></div>
+  <div id="error"></div>
+  <img src="wait.gif" class="hiding" id="waiting"/>
+  <script src="script/main.js"></script>
+  <script src="script/radius.js"></script>
+  <script src="script/colors.js"></script>
+  <script src="script/eval.js"></script>
+</body>
+</html>
