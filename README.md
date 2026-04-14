@@ -12,11 +12,11 @@ Gemini handwriting recognition for Math and Chinese.
 
 ## Installation
 
-### Run the Gemini Agent launcher
+### Run the Gemini agent launcher
 
 ```
 cd handwriting/agents
-Add GOOGLE_API_KEY key in .env
+Add your GOOGLE_API_KEY key in .env
 . .env 
 mvn compile exec:java -Dexec.mainClass="agents.recognition.writing.WritingRecognitionAgent"
 ```
@@ -34,4 +34,4 @@ Browse to http://localhost:8080 and you can write anything in the canvas. Then c
 
 ## Acknowledgement
 - The main depencies are Java `google-adk` and the computer algebra library `matheclipse`.
-- The frontend runs on Spring framework. The canvas is based on this great [Youtube video](https://www.youtube.com/watch?v=m4sioSqlXhQ)
+- The frontend runs on `Spring` framework. Latex math rendering uses `MathJax`. The canvas is based on this great [YouTube video](https://www.youtube.com/watch?v=m4sioSqlXhQ).
