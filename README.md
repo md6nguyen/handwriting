@@ -12,7 +12,7 @@ Gemini handwriting recognition for Math and Chinese.
 
 ## Installation
 
-### Run the Gemini Agent server
+### Run the Gemini Agent launcher
 
 ```
 cd handwriting/agents
@@ -32,3 +32,6 @@ java -jar target/writingrecognition-1.0-SNAPSHOT.jar
 ## Usage
 Browse to http://localhost:8080 and you can write anything in the canvas. Then click **Eval** to send screenshot to Gemini for evaluation.
 
+## Acknowledgement
+- The main depencies are Java `google-adk` and the computer algebra library `matheclipse`.
+- The frontend runs on Spring framework. The canvas is based on this great [Youtube video](https://www.youtube.com/watch?v=m4sioSqlXhQ)
