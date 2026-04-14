@@ -13,20 +13,21 @@ Gemini handwriting recognition for Math and Chinese.
 ## Installation
 
 ### Run the Gemini Agent server
-- cd handwriting/agents
 
-- Add GOOGLE_API_KEY key is in .env
-
-- . .env 
-
-- mvn compile exec:java -Dexec.mainClass="agents.recognition.writing.WritingRecognitionAgent"
+```
+cd handwriting/agents
+Add GOOGLE_API_KEY key in .env
+. .env 
+mvn compile exec:java -Dexec.mainClass="agents.recognition.writing.WritingRecognitionAgent"
+```
 
 ### Run the frontend web server
-- cd handwriting/frontend
 
-- mvn clean package
-
-- java -jar target/writingrecognition-1.0-SNAPSHOT.jar
+```
+cd handwriting/frontend
+mvn clean package
+java -jar target/writingrecognition-1.0-SNAPSHOT.jar
+```
 
 ## Usage
 Browse to http://localhost:8080 and you can write anything in the canvas. Then click **Eval** to send screenshot to Gemini for evaluation.
